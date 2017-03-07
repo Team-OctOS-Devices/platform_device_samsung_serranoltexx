@@ -22,7 +22,8 @@ $(call inherit-product, device/samsung/serrano-common/nfc.mk)
 $(call inherit-product, vendor/samsung/serranoltexx/serranoltexx-vendor.mk)
 
 # Device overlay
-DEVICE_PACKAGE_OVERLAYS += device/samsung/serranoltexx/overlay
+DEVICE_PACKAGE_OVERLAYS += vendor/to/product/samsung/serrano-common/overlay \
+                        += device/samsung/serranoltexx/overlay
 
 # Permissions
 PRODUCT_COPY_FILES += \
